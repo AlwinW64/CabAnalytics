@@ -1,0 +1,223 @@
+sql_analysis_report
+January taxi data
+
+    
+=== Feature Dataset ===
+Rows: 3,250,274
+Columns: 25
++--------------------+-----------+------------------+----------+------------+-------------+---------------+-----------+
+|tpep_pickup_datetime|pickup_hour|pickup_day_of_week|is_weekend|pickup_month|trip_distance|passenger_count|fare_amount|
++--------------------+-----------+------------------+----------+------------+-------------+---------------+-----------+
+|2025-01-02 00:00:02 |0          |5                 |0         |1           |2.87         |1.0            |16.3       |
+|2025-01-02 00:00:05 |0          |5                 |0         |1           |5.33         |3.0            |21.9       |
+|2025-01-02 00:00:06 |0          |5                 |0         |1           |0.74         |1.0            |7.2        |
+|2025-01-02 00:00:10 |0          |5                 |0         |1           |5.56         |1.0            |25.4       |
+|2025-01-02 00:00:14 |0          |5                 |0         |1           |9.67         |1.0            |38.7       |
+|2025-01-02 00:00:16 |0          |5                 |0         |1           |9.9          |1.0            |41.5       |
+|2025-01-02 00:00:16 |0          |5                 |0         |1           |1.54         |2.0            |10.7       |
+|2025-01-02 00:00:31 |0          |5                 |0         |1           |1.61         |1.0            |10.7       |
+|2025-01-02 00:00:35 |0          |5                 |0         |1           |4.73         |1.0            |21.2       |
+|2025-01-02 00:00:38 |0          |5                 |0         |1           |5.28         |1.0            |25.4       |
++--------------------+-----------+------------------+----------+------------+-------------+---------------+-----------+
+only showing top 10 rows
+
+
+=== Trips by Pickup Hour ===
++-----------+----------+------------+
+|pickup_hour|trip_count|average_fare|
++-----------+----------+------------+
+|          0|     86448|       18.63|
+|          1|     59468|       17.09|
+|          2|     40170|       16.23|
+|          3|     25541|       17.09|
+|          4|     17913|        22.0|
+|          5|     20494|       25.32|
+|          6|     46559|       21.13|
+|          7|     96681|       19.01|
+|          8|    133676|       17.68|
+|          9|    137078|       17.29|
+|         10|    142873|       17.39|
+|         11|    154220|       17.25|
+|         12|    168332|        17.5|
+|         13|    178345|        18.0|
+|         14|    193738|       18.61|
+|         15|    204258|       18.65|
+|         16|    202856|       18.67|
+|         17|    229110|       17.38|
+|         18|    236339|       16.46|
+|         19|    200436|        17.0|
+|         20|    184438|        17.5|
+|         21|    194009|       17.65|
+|         22|    170369|        18.2|
+|         23|    126923|       18.96|
++-----------+----------+------------+
+
+
+=== Trips by Weekday ===
++------------------+----------+------------+
+|pickup_day_of_week|trip_count|average_fare|
++------------------+----------+------------+
+|                 1|    378728|       18.33|
+|                 2|    343203|       18.72|
+|                 3|    425805|       17.49|
+|                 4|    536586|       17.72|
+|                 5|    571208|       18.07|
+|                 6|    543672|       17.97|
+|                 7|    451072|        17.1|
++------------------+----------+------------+
+
+
+Features saved to: data/processed/january_2025/taxi_trips_features.parquet
+(.venv) PS C:\Users\alwin\Documents\B Tech\Sem 7\INT315\CA2\Taxi_TripFare_Analytics> SUCCESS: The process with PID 17676 (child process of PID 14288) has been terminated.
+SUCCESS: The process with PID 14288 (child process of PID 11152) has been terminated.
+SUCCESS: The process with PID 11152 (child process of PID 9904) has been terminated.
+                        & "c:\Users\alwin\Documents\B Tech\Sem 7\INT315\CA2\Taxi_TripFare_Analytics\.venv\Scripts\python.exe" "c:/Users/alwin/Documents/B Tech/Sem 7/INT315/CA2/Taxi_TripFare_Analytics/data/jan_sql_analysis.py"       
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+
+=== Dataset Overview ===
+[Stage 1:>                                                                                                                Total records: 3,250,274
+Total columns: 25
+root
+ |-- airport_fee: double (nullable = true)
+ |-- cbd_congestion_fee: double (nullable = true)
+ |-- congestion_surcharge: double (nullable = true)
+ |-- dolocationid: integer (nullable = true)
+ |-- extra: double (nullable = true)
+ |-- fare_amount: double (nullable = true)
+ |-- improvement_surcharge: double (nullable = true)
+ |-- mta_tax: double (nullable = true)
+ |-- passenger_count: double (nullable = true)
+ |-- payment_type: integer (nullable = true)
+ |-- pulocationid: integer (nullable = true)
+ |-- ratecodeid: double (nullable = true)
+ |-- store_and_fwd_flag: string (nullable = true)
+ |-- tip_amount: double (nullable = true)
+ |-- tolls_amount: double (nullable = true)
+ |-- total_amount: double (nullable = true)
+ |-- tpep_dropoff_datetime: timestamp (nullable = true)
+ |-- tpep_pickup_datetime: timestamp (nullable = true)
+ |-- trip_distance: double (nullable = true)
+ |-- vendorid: integer (nullable = true)
+ |-- trip_duration_minutes: double (nullable = true)
+ |-- pickup_hour: integer (nullable = true)
+ |-- pickup_day_of_week: integer (nullable = true)
+ |-- is_weekend: integer (nullable = true)
+ |-- pickup_month: integer (nullable = true)
+
+
+=== Hourly Demand and Average Fare ===
+[Stage 4:>                                                                                                                +-----------+----------+------------+----------------+
+|pickup_hour|trip_count|average_fare|average_distance|
++-----------+----------+------------+----------------+
+|0          |86448     |18.63       |3.65            |
+|1          |59468     |17.09       |3.22            |
+|2          |40170     |16.23       |3.07            |
+|3          |25541     |17.09       |3.42            |
+|4          |17913     |22.0        |4.78            |
+|5          |20494     |25.32       |5.77            |
+|6          |46559     |21.13       |4.53            |
+|7          |96681     |19.01       |3.57            |
+|8          |133676    |17.68       |2.97            |
+|9          |137078    |17.29       |2.89            |
+|10         |142873    |17.39       |2.94            |
+|11         |154220    |17.25       |2.85            |
+|12         |168332    |17.5        |2.94            |
+|13         |178345    |18.0        |3.04            |
+|14         |193738    |18.61       |3.19            |
+|15         |204258    |18.65       |3.18            |
+|16         |202856    |18.67       |3.22            |
+|17         |229110    |17.38       |2.87            |
+|18         |236339    |16.46       |2.69            |
+|19         |200436    |17.0        |2.97            |
+|20         |184438    |17.5        |3.24            |
+|21         |194009    |17.65       |3.27            |
+|22         |170369    |18.2        |3.4             |
+|23         |126923    |18.96       |3.73            |
++-----------+----------+------------+----------------+
+
+
+=== Weekday Demand and Average Fare ===
++------------------+---------+----------+------------+
+|pickup_day_of_week|day_name |trip_count|average_fare|
++------------------+---------+----------+------------+
+|1                 |Sunday   |378728    |18.33       |
+|2                 |Monday   |343203    |18.72       |
+|3                 |Tuesday  |425805    |17.49       |
+|4                 |Wednesday|536586    |17.72       |
+|5                 |Thursday |571208    |18.07       |
+|6                 |Friday   |543672    |17.97       |
+|7                 |Saturday |451072    |17.1        |
++------------------+---------+----------+------------+
+
+
+=== Fare by Trip Distance ===
++-------------------+----------+----------------+------------+------------+------------+
+|distance_band      |trip_count|average_distance|average_fare|minimum_fare|maximum_fare|
++-------------------+----------+----------------+------------+------------+------------+
+|Under 1 mile       |765307    |0.67            |7.86        |0.01        |200.0       |
+|1 to under 3 miles |1622830   |1.75            |12.88       |0.01        |190.0       |
+|3 to under 5 miles |362521    |3.77            |21.77       |0.01        |170.0       |
+|5 to under 10 miles|273962    |7.2             |33.18       |0.01        |200.0       |
+|10 miles or more   |225654    |15.8            |63.04       |0.01        |200.0       |
++-------------------+----------+----------------+------------+------------+------------+
+
+
+=== Top 10 Pickup Locations ===
+[Stage 13:>                                                                                                               +------------+------------+------------+
+|pulocationid|pickup_count|average_fare|
++------------+------------+------------+
+|161         |161240      |15.05       |
+|237         |157912      |12.18       |
+|236         |149664      |12.78       |
+|132         |134184      |61.8        |
+|230         |118185      |17.42       |
+|186         |114061      |15.41       |
+|162         |112552      |14.71       |
+|142         |105957      |13.62       |
+|239         |91838       |13.51       |
+|163         |91498       |15.3        |
++------------+------------+------------+
+
+
+=== Top 10 Drop-off Locations ===
+[Stage 16:>                                                                                                               +------------+-------------+------------+
+|dolocationid|dropoff_count|average_fare|
++------------+-------------+------------+
+|236         |155602       |13.18       |
+|237         |143993       |12.27       |
+|161         |124205       |14.92       |
+|230         |99820        |18.49       |
+|170         |94441        |14.2        |
+|142         |93932        |13.96       |
+|239         |93081        |14.57       |
+|162         |88781        |14.56       |
+|141         |88602        |13.62       |
+|68          |83279        |15.29       |
++------------+-------------+------------+
+
+
+=== Trips by Passenger Count ===
++---------------+----------+------------+----------------+
+|passenger_count|trip_count|average_fare|average_distance|
++---------------+----------+------------+----------------+
+|NULL           |413153    |18.15       |3.14            |
+|0.0            |23630     |15.46       |2.52            |
+|1.0            |2248248   |17.32       |3.05            |
+|2.0            |393452    |20.08       |3.69            |
+|3.0            |87719     |19.74       |3.49            |
+|4.0            |54699     |21.93       |3.78            |
+|5.0            |17537     |16.77       |2.95            |
+|6.0            |11826     |17.22       |3.06            |
+|7.0            |1         |79.0        |0.02            |
+|8.0            |6         |69.73       |11.62           |
+|9.0            |3         |91.33       |14.86           |
++---------------+----------+------------+----------------+
+
+
+=== Overall Trip Statistics ===
++-----------+------------+----------------+------------------------+------------+------------+
+|total_trips|average_fare|average_distance|average_duration_minutes|minimum_fare|maximum_fare|
++-----------+------------+----------------+------------------------+------------+------------+
+|3250274    |17.88       |3.16            |14.66                   |0.01        |200.0       |
++-----------+------------+----------------+------------------------+------------+------------+

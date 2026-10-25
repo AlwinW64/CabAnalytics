@@ -1,0 +1,190 @@
+random forest results
+
+Training records: 2,600,660                                                     
+Test records: 649,614
+
+Training Random Forest model...
+26/10/24 05:59:06 WARN MemoryStore: Not enough space to cache rdd_39_6 in memory! (computed 1628.4 KiB so far)
+26/10/24 05:59:06 WARN MemoryStore: Not enough space to cache rdd_39_12 in memory! (computed 5.6 MiB so far)
+26/10/24 05:59:06 WARN MemoryStore: Not enough space to cache rdd_39_2 in memory! (computed 8.3 MiB so far)
+26/10/24 05:59:06 WARN MemoryStore: Not enough space to cache rdd_39_1 in memory! (computed 8.3 MiB so far)
+26/10/24 05:59:06 WARN MemoryStore: Not enough space to cache rdd_39_8 in memory! (computed 5.6 MiB so far)
+26/10/24 05:59:06 WARN MemoryStore: Not enough space to cache rdd_39_9 in memory! (computed 2.4 MiB so far)
+26/10/24 05:59:06 WARN BlockManager: Persisting block rdd_39_2 to disk instead.
+26/10/24 05:59:06 WARN BlockManager: Persisting block rdd_39_6 to disk instead.
+26/10/24 05:59:06 WARN BlockManager: Persisting block rdd_39_8 to disk instead.
+26/10/24 05:59:06 WARN BlockManager: Persisting block rdd_39_12 to disk instead.
+26/10/24 05:59:06 WARN BlockManager: Persisting block rdd_39_9 to disk instead.
+26/10/24 05:59:06 WARN BlockManager: Persisting block rdd_39_1 to disk instead.
+26/10/24 05:59:07 WARN MemoryStore: Not enough space to cache rdd_39_10 in memory! (computed 12.7 MiB so far)
+26/10/24 05:59:07 WARN MemoryStore: Not enough space to cache rdd_39_11 in memory! (computed 12.7 MiB so far)
+26/10/24 05:59:07 WARN MemoryStore: Not enough space to cache rdd_39_5 in memory! (computed 12.7 MiB so far)
+26/10/24 05:59:07 WARN MemoryStore: Not enough space to cache rdd_39_13 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:07 WARN BlockManager: Persisting block rdd_39_13 to disk instead.
+26/10/24 05:59:07 WARN MemoryStore: Not enough space to cache rdd_39_7 in memory! (computed 12.7 MiB so far)
+26/10/24 05:59:07 WARN BlockManager: Persisting block rdd_39_11 to disk instead.
+26/10/24 05:59:07 WARN MemoryStore: Not enough space to cache rdd_39_14 in memory! (computed 8.3 MiB so far)
+26/10/24 05:59:07 WARN BlockManager: Persisting block rdd_39_10 to disk instead.
+26/10/24 05:59:07 WARN BlockManager: Persisting block rdd_39_5 to disk instead.
+26/10/24 05:59:07 WARN BlockManager: Persisting block rdd_39_14 to disk instead.
+26/10/24 05:59:07 WARN BlockManager: Persisting block rdd_39_7 to disk instead.
+26/10/24 05:59:07 WARN MemoryStore: Not enough space to cache rdd_39_0 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:07 WARN BlockManager: Persisting block rdd_39_0 to disk instead.
+26/10/24 05:59:07 WARN MemoryStore: Not enough space to cache rdd_39_3 in memory! (computed 44.0 MiB so far)
+26/10/24 05:59:07 WARN BlockManager: Persisting block rdd_39_3 to disk instead.
+26/10/24 05:59:07 WARN MemoryStore: Not enough space to cache rdd_39_4 in memory! (computed 99.6 MiB so far)
+26/10/24 05:59:07 WARN BlockManager: Persisting block rdd_39_4 to disk instead.
+26/10/24 05:59:09 WARN MemoryStore: Not enough space to cache rdd_39_12 in memory! (computed 12.7 MiB so far)
+26/10/24 05:59:09 WARN MemoryStore: Not enough space to cache rdd_39_11 in memory! (computed 12.7 MiB so far)
+26/10/24 05:59:09 WARN MemoryStore: Not enough space to cache rdd_39_14 in memory! (computed 99.6 MiB so far)
+26/10/24 05:59:09 WARN MemoryStore: Not enough space to cache rdd_39_13 in memory! (computed 66.0 MiB so far)
+26/10/24 05:59:09 WARN MemoryStore: Not enough space to cache rdd_39_10 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:09 WARN MemoryStore: Not enough space to cache rdd_39_9 in memory! (computed 66.0 MiB so far)
+26/10/24 05:59:09 WARN MemoryStore: Not enough space to cache rdd_39_8 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:10 WARN MemoryStore: Not enough space to cache rdd_39_6 in memory! (computed 66.0 MiB so far)
+26/10/24 05:59:10 WARN MemoryStore: Not enough space to cache rdd_39_5 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:10 WARN MemoryStore: Not enough space to cache rdd_39_7 in memory! (computed 44.0 MiB so far)
+26/10/24 05:59:10 WARN MemoryStore: Not enough space to cache rdd_39_4 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:10 WARN MemoryStore: Not enough space to cache rdd_39_2 in memory! (computed 99.6 MiB so far)
+26/10/24 05:59:10 WARN MemoryStore: Not enough space to cache rdd_39_3 in memory! (computed 156.6 MiB so far)
+26/10/24 05:59:10 WARN MemoryStore: Not enough space to cache rdd_39_1 in memory! (computed 66.0 MiB so far)
+26/10/24 05:59:11 WARN MemoryStore: Not enough space to cache rdd_39_0 in memory! (computed 99.6 MiB so far)
+26/10/24 05:59:14 WARN MemoryStore: Not enough space to cache rdd_39_5 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:14 WARN MemoryStore: Not enough space to cache rdd_39_13 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:14 WARN MemoryStore: Not enough space to cache rdd_39_9 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:14 WARN MemoryStore: Not enough space to cache rdd_39_12 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:14 WARN MemoryStore: Not enough space to cache rdd_39_2 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:14 WARN MemoryStore: Not enough space to cache rdd_39_14 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:14 WARN MemoryStore: Not enough space to cache rdd_39_3 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:14 WARN MemoryStore: Not enough space to cache rdd_39_7 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:14 WARN MemoryStore: Not enough space to cache rdd_39_8 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:15 WARN MemoryStore: Not enough space to cache rdd_39_1 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:15 WARN MemoryStore: Not enough space to cache rdd_39_6 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:15 WARN MemoryStore: Not enough space to cache rdd_39_10 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:15 WARN MemoryStore: Not enough space to cache rdd_39_4 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:15 WARN MemoryStore: Not enough space to cache rdd_39_0 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:15 WARN MemoryStore: Not enough space to cache rdd_39_11 in memory! (computed 44.0 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_10 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_14 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_12 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_2 in memory! (computed 12.7 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_1 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_7 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_3 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_0 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_5 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_9 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_11 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_13 in memory! (computed 44.0 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_6 in memory! (computed 44.0 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_8 in memory! (computed 44.0 MiB so far)
+26/10/24 05:59:19 WARN MemoryStore: Not enough space to cache rdd_39_4 in memory! (computed 44.0 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_14 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_5 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_4 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_2 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_8 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_10 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_9 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_12 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_0 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_3 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_11 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_1 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_13 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_6 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:25 WARN MemoryStore: Not enough space to cache rdd_39_7 in memory! (computed 44.0 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_0 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_5 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_8 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_11 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_3 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_12 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_2 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_4 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_9 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_1 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_14 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_10 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_6 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_7 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:30 WARN MemoryStore: Not enough space to cache rdd_39_13 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_13 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_4 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_2 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_5 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_11 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_6 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_8 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_12 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_3 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_10 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_1 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_14 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_9 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_0 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:36 WARN MemoryStore: Not enough space to cache rdd_39_7 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN DAGScheduler: Broadcasting large task binary with size 1036.4 KiB
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_8 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_11 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_10 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_2 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_5 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_4 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_3 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_7 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_0 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_14 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_12 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_1 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_9 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_13 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:42 WARN MemoryStore: Not enough space to cache rdd_39_6 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN DAGScheduler: Broadcasting large task binary with size 1533.6 KiB
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_6 in memory! (computed 19.5 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_5 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_7 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_9 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_8 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_14 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_4 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_12 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_13 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_0 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_3 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_10 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_11 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_1 in memory! (computed 29.3 MiB so far)
+26/10/24 05:59:48 WARN MemoryStore: Not enough space to cache rdd_39_2 in memory! (computed 29.3 MiB so far)
+                                                                                
+Generating test predictions...
+
+=== Sample Predictions ===
++-----------+------------------+-------------+-----------+
+|fare_amount|prediction        |trip_distance|pickup_hour|
++-----------+------------------+-------------+-----------+
+|1.0        |10.253840904817071|0.01         |1          |
+|14.0       |10.253840904817071|0.01         |4          |
+|65.0       |34.82334572531905 |0.01         |4          |
+|3.0        |10.253840904817071|0.01         |5          |
+|3.0        |10.253840904817071|0.01         |7          |
+|3.0        |38.851296110386365|0.01         |8          |
+|85.0       |27.171872356797707|0.01         |9          |
+|3.0        |10.253840904817071|0.01         |10         |
+|3.0        |10.253840904817071|0.01         |12         |
+|70.0       |10.253840904817071|0.01         |12         |
+|86.0       |38.851296110386365|0.01         |12         |
+|25.4       |10.253840904817071|0.01         |12         |
+|3.0        |10.253840904817071|0.01         |12         |
+|85.0       |10.253840904817071|0.01         |13         |
+|87.0       |10.253840904817071|0.01         |13         |
++-----------+------------------+-------------+-----------+
+only showing top 15 rows
+
+
+=== Random Forest Evaluation ===
+Test RMSE: 5.0404                                                               
+Test MAE: 2.9266                                                                
+Test R2: 0.8968                                                                 
+
+Saved model to: models/january_2025_random_forest
