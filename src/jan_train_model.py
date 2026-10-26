@@ -1,6 +1,6 @@
 
-
 from pyspark.sql import SparkSession
+from pyspark import StorageLevel
 from pyspark.ml import Pipeline
 from pyspark.ml.feature import (
     StringIndexer,
@@ -15,7 +15,10 @@ MODEL_PATH = "models/january_2025_linear_regression"
 
 spark = (
     SparkSession.builder
-    .appName("NYCTaxiFarePrediction")
+    .appName("NYCTaxiLinearR0.01reg")
+    .master("local[4]")
+    .config("spark.driver.memory", "6g")
+    .config("spark.driver.maxResultSize", "1g")
     .getOrCreate()
 )
 
@@ -39,7 +42,7 @@ df = df.select(
     & (df["trip_distance"] > 0)
     & df["pickup_hour"].isNotNull()
     & df["pickup_day_of_week"].isNotNull()
-)
+).persist(StorageLevel.MEMORY_AND_DISK)
 
 print(f"Records available for modeling: {df.count():,}")
 
@@ -84,7 +87,7 @@ regression = LinearRegression(
     labelCol="fare_amount",
     predictionCol="prediction",
     maxIter=50,
-    regParam=0.1,
+    regParam=0.01,
     elasticNetParam=0.0
 )
 

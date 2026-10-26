@@ -1,6 +1,6 @@
 
-
 from pyspark.sql import SparkSession
+from pyspark import StorageLevel
 from pyspark.ml import Pipeline
 from pyspark.ml.feature import StringIndexer, OneHotEncoder, VectorAssembler
 from pyspark.ml.regression import RandomForestRegressor
@@ -12,6 +12,9 @@ MODEL_PATH = "models/january_2025_random_forest"
 spark = (
     SparkSession.builder
     .appName("NYCTaxiRandomForest")
+    .master("local[4]")
+    .config("spark.driver.memory", "6g")
+    .config("spark.driver.maxResultSize", "1g")
     .getOrCreate()
 )
 
@@ -33,7 +36,10 @@ df = df.select(
     & (df["trip_distance"] > 0)
     & df["pickup_hour"].isNotNull()
     & df["pickup_day_of_week"].isNotNull()
-)
+).persist(StorageLevel.MEMORY_AND_DISK)
+
+total = df.count()
+print(f"Total records available: {total:,}")
 
 train_df, test_df = df.randomSplit([0.8, 0.2], seed=42)
 
@@ -71,7 +77,7 @@ rf = RandomForestRegressor(
     featuresCol="features",
     labelCol="fare_amount",
     predictionCol="prediction",
-    numTrees=20,
+    numTrees=40,
     maxDepth=8,
     maxBins=64,
     seed=42
